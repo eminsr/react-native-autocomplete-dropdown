@@ -46,7 +46,6 @@
     "lodash.debounce": "*",
     "prop-types": "*",
     "react-native-size-matters": "^0.3.0 || ^0.4.0",
-    "react-native-vector-icons": ">=7.0.0"
   },
   "bugs": {
     "url": "https://github.com/onmotion/react-native-autocomplete-dropdown/issues"
