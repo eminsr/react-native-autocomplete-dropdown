@@ -27,9 +27,6 @@ Dropdown Item picker with search and autocomplete (typeahead) functionality for 
     - [Demo](#demo)
     - [Nav](#nav)
     - [Installation](#installation)
-    - [Post-install Steps](#post-install-steps)
-        - [iOS](#ios)
-        - [Android](#android)
     - [Usage](#usage)
         - [Dataset item format](#dataset-item-format)
         - [Example with local Dataset](#example-with-local-dataset)
@@ -41,21 +38,6 @@ Dropdown Item picker with search and autocomplete (typeahead) functionality for 
 ## Installation
 
 Run: `npm install --save react-native-autocomplete-dropdown` or `yarn add react-native-autocomplete-dropdown`
-
-## Post-install Steps
-
-Make sure **react-native-vector-icons** is installed. Follow the guides
-<https://github.com/oblador/react-native-vector-icons>
-
-`yarn add react-native-vector-icons`
-
-### iOS
-
-Run: `npx pod-install` for install react-native-vector-icons dependency (if not installed yet).
-
-### Android
-
-Follow the guides from <https://github.com/oblador/react-native-vector-icons#android> for install react-native-vector-icons dependency (if not installed yet).
 
 ## Usage
 
