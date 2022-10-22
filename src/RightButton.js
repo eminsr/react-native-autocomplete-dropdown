@@ -1,8 +1,5 @@
 import React, { memo, useEffect, useRef } from 'react'
-import { ActivityIndicator, Animated, Easing, StyleSheet, TouchableOpacity, View } from 'react-native'
-// Icons
-import Feather from 'react-native-vector-icons/Feather'
-Feather.loadFont()
+import { ActivityIndicator, Animated, Easing, StyleSheet, TouchableOpacity, View, Image } from 'react-native'
 
 export const RightButton = memo(
   ({
@@ -42,14 +39,14 @@ export const RightButton = memo(
         }}>
         {!loading && showClear && (
           <TouchableOpacity onPress={onClearPress} style={styles.clearButton}>
-            {ClearIconComponent ?? <Feather name="x" size={18} color="#aeb4c6" />}
+            {ClearIconComponent ?? <Image source={require('./assets/x.png')} style={{width:18,height:18}} />}
           </TouchableOpacity>
         )}
         {loading && <ActivityIndicator color="#999" />}
         {showChevron && (
           <Animated.View style={{ transform: [{ rotate: chevronSpin }] }}>
             <TouchableOpacity onPress={onChevronPress} style={styles.chevronButton}>
-              {ChevronIconComponent ?? <Feather name="chevron-down" size={20} color="#727992" />}
+              {ChevronIconComponent ?? <Image source={require('./assets/chevron-down.png')} style={{width:20,height:20}} />}
             </TouchableOpacity>
           </Animated.View>
         )}
